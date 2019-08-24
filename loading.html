@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+        }
+        a{
+            text-decoration: none;
+        }
+         h2{
+            margin:0;
+        }
+        body{
+            margin:0px;
+            background: url(img/timg.jpg);/*背景图片*/
+            background-position:center; /*背景居中*/      
+            background-repeat:no-repeat;/*不平铺*/
+            background-size:cover;/*图片大小，填充*/
+            overflow: hidden;/*解决外边距合并*/
+            }
+        .nav-wrap{
+            position: relative;
+            /* width: 200px; 
+            height: 300px; */
+            margin-top:200px;
+            
+        }
+        .nav-wrap .bg-box{
+            height:300px;
+            background:url(img/bg.png); 
+            opacity:0.7;/*透明度*/
+        }
+        .nav-wrap .hero-box{
+            position: absolute;
+            top:-50px;
+            left:30px;
+            width: 200px;
+            height: 400px;
+            background:url(img/bg.png) no-repeat 0/cover;/*no-repeat 0/cover*/
+        }
+       
+        .nav-wrap .hero-box h2,.nav-wrap .hero-box a{
+            width: 200px;
+            height: 50px;
+            color:wheat;
+            line-height: 50px;
+            text-indent:20px;/*文本缩进*/
+            border-bottom:1px solid wheat;
+        }
+        
+        .nav-wrap .hero-box a{
+            display: block;
+        }
+        .nav-wrap .hero-box a:hover{
+            background: teal;
+        }
+        .nav-wrap .hero-box a img{
+            display: none;/*不显示图片*/
+            position: absolute;
+            top:-72px;
+            left:290px;
+        }
+        .nav-wrap .hero-box a:hover img{
+            display: block;/*显示标签*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav-wrap">
+        <div class="bg-box"></div>
+        <div class="hero-box">
+            <h2>英雄介绍</h2>
+            <a href="">
+                移花
+                <img src="img/yihua.png" alt="">
+            </a>
+            <a href="">
+                唐门
+                <img src="img/tangmen.png" alt="">
+            </a>
+            <a href="">
+                神刀
+                <img src="img/shendao.png" alt="">
+            </a>
+            <a href="">
+                太白
+                <img src="img/taibai.png" alt="">
+            </a>
+            <a href="">
+                五毒
+                <img src="img/wudu.png" alt="">
+            </a>
+            <a href="">
+                神威
+                <img src="img/shenwei.png" alt="">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
